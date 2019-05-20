@@ -1,0 +1,26 @@
+{
+  "name": "ppe2",
+  "version": "1.0.0",
+  "description": "PPE2 - POMMADAM",
+  "main": "index.php",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N4n3x/ppe2TableauDeBord.git"
+  },
+  "author": "N4n3x",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N4n3x/ppe2TableauDeBord/issues"
+  },
+  "homepage": "https://github.com/N4n3x/ppe2TableauDeBord#readme",
+  "devDependencies": {
+    "docdash": "^1.1.0"
+  }
+}

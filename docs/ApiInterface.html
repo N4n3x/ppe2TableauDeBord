@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>ApiInterface - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ApiInterface.html">ApiInterface</a><ul class='methods'><li data-type='method'><a href="ApiInterface.html#Delete">Delete</a></li><li data-type='method'><a href="ApiInterface.html#Get">Get</a></li><li data-type='method'><a href="ApiInterface.html#Post">Post</a></li><li data-type='method'><a href="ApiInterface.html#Put">Put</a></li></ul></li><li><a href="App.html">App</a><ul class='methods'><li data-type='method'><a href="App.html#LoadUsage">LoadUsage</a></li><li data-type='method'><a href="App.html#LoadUser">LoadUser</a></li><li data-type='method'><a href="App.html#LoadVehicle">LoadVehicle</a></li></ul></li><li><a href="Connexion.html">Connexion</a><ul class='methods'><li data-type='method'><a href="Connexion.html#Disconnect">Disconnect</a></li><li data-type='method'><a href="Connexion.html#OnConnected">OnConnected</a></li><li data-type='method'><a href="Connexion.html#Req">Req</a></li></ul></li><li><a href="Form.html">Form</a><ul class='methods'><li data-type='method'><a href="Form.html#CreateInput">CreateInput</a></li><li data-type='method'><a href="Form.html#Error">Error</a></li><li data-type='method'><a href="Form.html#InitForm">InitForm</a></li><li data-type='method'><a href="Form.html#OnSubmit">OnSubmit</a></li><li data-type='method'><a href="Form.html#ToJson">ToJson</a></li></ul></li><li><a href="Navigation.html">Navigation</a><ul class='methods'><li data-type='method'><a href="Navigation.html#initButton">initButton</a></li></ul></li><li><a href="Table.html">Table</a><ul class='methods'><li data-type='method'><a href="Table.html#AddButton">AddButton</a></li><li data-type='method'><a href="Table.html#AddCell">AddCell</a></li><li data-type='method'><a href="Table.html#AddHeader">AddHeader</a></li><li data-type='method'><a href="Table.html#AddRow">AddRow</a></li><li data-type='method'><a href="Table.html#InitTable">InitTable</a></li></ul></li><li><a href="Usage.html">Usage</a><ul class='methods'><li data-type='method'><a href="Usage.html#Add">Add</a></li><li data-type='method'><a href="Usage.html#Delete">Delete</a></li><li data-type='method'><a href="Usage.html#DeleteUsage">DeleteUsage</a></li><li data-type='method'><a href="Usage.html#DisplayUsages">DisplayUsages</a></li><li data-type='method'><a href="Usage.html#Edit">Edit</a></li><li data-type='method'><a href="Usage.html#GetUsages">GetUsages</a></li><li data-type='method'><a href="Usage.html#OnClickAdd">OnClickAdd</a></li><li data-type='method'><a href="Usage.html#OnClickEdit">OnClickEdit</a></li><li data-type='method'><a href="Usage.html#PostUsage">PostUsage</a></li><li data-type='method'><a href="Usage.html#PutUsage">PutUsage</a></li></ul></li><li><a href="User.html">User</a><ul class='methods'><li data-type='method'><a href="User.html#Add">Add</a></li><li data-type='method'><a href="User.html#Delete">Delete</a></li><li data-type='method'><a href="User.html#DeleteUser">DeleteUser</a></li><li data-type='method'><a href="User.html#DisplayUsers">DisplayUsers</a></li><li data-type='method'><a href="User.html#Edit">Edit</a></li><li data-type='method'><a href="User.html#GetUsers">GetUsers</a></li><li data-type='method'><a href="User.html#OnClickAdd">OnClickAdd</a></li><li data-type='method'><a href="User.html#OnClickEdit">OnClickEdit</a></li><li data-type='method'><a href="User.html#PostUser">PostUser</a></li><li data-type='method'><a href="User.html#PutUser">PutUser</a></li></ul></li><li><a href="Vehicle.html">Vehicle</a><ul class='methods'><li data-type='method'><a href="Vehicle.html#Add">Add</a></li><li data-type='method'><a href="Vehicle.html#Delete">Delete</a></li><li data-type='method'><a href="Vehicle.html#DeleteVehicle">DeleteVehicle</a></li><li data-type='method'><a href="Vehicle.html#DisplayVehicles">DisplayVehicles</a></li><li data-type='method'><a href="Vehicle.html#Edit">Edit</a></li><li data-type='method'><a href="Vehicle.html#GetVehicles">GetVehicles</a></li><li data-type='method'><a href="Vehicle.html#OnClickAdd">OnClickAdd</a></li><li data-type='method'><a href="Vehicle.html#OnClickEdit">OnClickEdit</a></li><li data-type='method'><a href="Vehicle.html#PostVehicle">PostVehicle</a></li><li data-type='method'><a href="Vehicle.html#PutVehicle">PutVehicle</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">ApiInterface</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        ApiInterface
+        </h2>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+    
+
+    <h4 class="name" id="ApiInterface"><span class="type-signature"></span>new ApiInterface<span class="signature">(url)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Api.js.html">Api.js</a>, <a href="Api.js.html#line791">line 791</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Classe qui fait appel à l'API</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>url de l'API</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="Delete"><span class="type-signature">(async) </span>Delete<span class="signature">(uri, token)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Api.js.html">Api.js</a>, <a href="Api.js.html#line843">line 843</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Envoi une requete HTTP de type DELETE</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>uri</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>uri de la requete</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>""</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>token d'autorisation si besoin</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="Get"><span class="type-signature">(async) </span>Get<span class="signature">(uri)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Api.js.html">Api.js</a>, <a href="Api.js.html#line798">line 798</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Envoi une requete HTTP de type GET</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>uri</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>uri de la requete</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="Post"><span class="type-signature">(async) </span>Post<span class="signature">(uri, json, token)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Api.js.html">Api.js</a>, <a href="Api.js.html#line827">line 827</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Envoi une requete HTTP de type POST</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>uri</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>uri de la requete</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>json</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>données au format json à envoyer</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>""</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>token d'autorisation si besoin</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="Put"><span class="type-signature">(async) </span>Put<span class="signature">(uri, json, token)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Api.js.html">Api.js</a>, <a href="Api.js.html#line809">line 809</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Envoi une requete HTTP de type PUT</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>uri</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>uri de la requete</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>json</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>données au format json à envoyer</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    <code>""</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>token d'autorisation si besoin</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon May 20 2019 09:35:04 GMT+0200 (GMT+02:00) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

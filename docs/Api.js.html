@@ -1,4 +1,47 @@
-  class App{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Api.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ApiInterface.html">ApiInterface</a><ul class='methods'><li data-type='method'><a href="ApiInterface.html#Delete">Delete</a></li><li data-type='method'><a href="ApiInterface.html#Get">Get</a></li><li data-type='method'><a href="ApiInterface.html#Post">Post</a></li><li data-type='method'><a href="ApiInterface.html#Put">Put</a></li></ul></li><li><a href="App.html">App</a><ul class='methods'><li data-type='method'><a href="App.html#LoadUsage">LoadUsage</a></li><li data-type='method'><a href="App.html#LoadUser">LoadUser</a></li><li data-type='method'><a href="App.html#LoadVehicle">LoadVehicle</a></li></ul></li><li><a href="Connexion.html">Connexion</a><ul class='methods'><li data-type='method'><a href="Connexion.html#Disconnect">Disconnect</a></li><li data-type='method'><a href="Connexion.html#OnConnected">OnConnected</a></li><li data-type='method'><a href="Connexion.html#Req">Req</a></li></ul></li><li><a href="Form.html">Form</a><ul class='methods'><li data-type='method'><a href="Form.html#CreateInput">CreateInput</a></li><li data-type='method'><a href="Form.html#Error">Error</a></li><li data-type='method'><a href="Form.html#InitForm">InitForm</a></li><li data-type='method'><a href="Form.html#OnSubmit">OnSubmit</a></li><li data-type='method'><a href="Form.html#ToJson">ToJson</a></li></ul></li><li><a href="Navigation.html">Navigation</a><ul class='methods'><li data-type='method'><a href="Navigation.html#initButton">initButton</a></li></ul></li><li><a href="Table.html">Table</a><ul class='methods'><li data-type='method'><a href="Table.html#AddButton">AddButton</a></li><li data-type='method'><a href="Table.html#AddCell">AddCell</a></li><li data-type='method'><a href="Table.html#AddHeader">AddHeader</a></li><li data-type='method'><a href="Table.html#AddRow">AddRow</a></li><li data-type='method'><a href="Table.html#InitTable">InitTable</a></li></ul></li><li><a href="Usage.html">Usage</a><ul class='methods'><li data-type='method'><a href="Usage.html#Add">Add</a></li><li data-type='method'><a href="Usage.html#Delete">Delete</a></li><li data-type='method'><a href="Usage.html#DeleteUsage">DeleteUsage</a></li><li data-type='method'><a href="Usage.html#DisplayUsages">DisplayUsages</a></li><li data-type='method'><a href="Usage.html#Edit">Edit</a></li><li data-type='method'><a href="Usage.html#GetUsages">GetUsages</a></li><li data-type='method'><a href="Usage.html#OnClickAdd">OnClickAdd</a></li><li data-type='method'><a href="Usage.html#OnClickEdit">OnClickEdit</a></li><li data-type='method'><a href="Usage.html#PostUsage">PostUsage</a></li><li data-type='method'><a href="Usage.html#PutUsage">PutUsage</a></li></ul></li><li><a href="User.html">User</a><ul class='methods'><li data-type='method'><a href="User.html#Add">Add</a></li><li data-type='method'><a href="User.html#Delete">Delete</a></li><li data-type='method'><a href="User.html#DeleteUser">DeleteUser</a></li><li data-type='method'><a href="User.html#DisplayUsers">DisplayUsers</a></li><li data-type='method'><a href="User.html#Edit">Edit</a></li><li data-type='method'><a href="User.html#GetUsers">GetUsers</a></li><li data-type='method'><a href="User.html#OnClickAdd">OnClickAdd</a></li><li data-type='method'><a href="User.html#OnClickEdit">OnClickEdit</a></li><li data-type='method'><a href="User.html#PostUser">PostUser</a></li><li data-type='method'><a href="User.html#PutUser">PutUser</a></li></ul></li><li><a href="Vehicle.html">Vehicle</a><ul class='methods'><li data-type='method'><a href="Vehicle.html#Add">Add</a></li><li data-type='method'><a href="Vehicle.html#Delete">Delete</a></li><li data-type='method'><a href="Vehicle.html#DeleteVehicle">DeleteVehicle</a></li><li data-type='method'><a href="Vehicle.html#DisplayVehicles">DisplayVehicles</a></li><li data-type='method'><a href="Vehicle.html#Edit">Edit</a></li><li data-type='method'><a href="Vehicle.html#GetVehicles">GetVehicles</a></li><li data-type='method'><a href="Vehicle.html#OnClickAdd">OnClickAdd</a></li><li data-type='method'><a href="Vehicle.html#OnClickEdit">OnClickEdit</a></li><li data-type='method'><a href="Vehicle.html#PostVehicle">PostVehicle</a></li><li data-type='method'><a href="Vehicle.html#PutVehicle">PutVehicle</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Api.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>  class App{
   /**
    * @description Classe global qui représente l'application
    * @constructor
@@ -100,7 +143,7 @@ class Usage{
       "Description",
       "Véhicule",
       "Utilisateur",
-      "<button class='btnAdd' onclick='app.usage.OnClickAdd()'>+</button>"
+      "&lt;button class='btnAdd' onclick='app.usage.OnClickAdd()'>+&lt;/button>"
     ]);
     await this.GetUsages("usages");
     let table = this.table;
@@ -247,7 +290,7 @@ class User{
       "Nom",
       "Email",
       "Rôle",
-      "<button class='btnAdd' onclick='app.user.OnClickAdd()'>+</button>"
+      "&lt;button class='btnAdd' onclick='app.user.OnClickAdd()'>+&lt;/button>"
     ]);
     await this.GetUsers("users");
     let table = this.table;
@@ -389,7 +432,7 @@ class Vehicle{
       "Autonomie",
       "Energie",
       "Place",
-      "<button class='btnAdd' onclick='app.vehicle.OnClickAdd()'>+</button>"
+      "&lt;button class='btnAdd' onclick='app.vehicle.OnClickAdd()'>+&lt;/button>"
     ]);
     await this.GetVehicles("vehicles");
     let table = this.table;
@@ -652,18 +695,18 @@ class Form{
   ToJson(form){
     var field = [];
     var s = {};
-    if (typeof form == 'object' && form.nodeName == "FORM") {
+    if (typeof form == 'object' &amp;&amp; form.nodeName == "FORM") {
         var len = form.elements.length;
-        for (let i=0; i<len; i++) {
+        for (let i=0; i&lt;len; i++) {
             field = form.elements[i];
-            if (field.name && !field.disabled && field.type != 'file' && field.type != 'reset' && field.type != 'submit' && field.type != 'button') {
+            if (field.name &amp;&amp; !field.disabled &amp;&amp; field.type != 'file' &amp;&amp; field.type != 'reset' &amp;&amp; field.type != 'submit' &amp;&amp; field.type != 'button') {
                 if (field.type == 'select-multiple') {
                     for (let j=form.elements[i].options.length-1; j>=0; j--) {
                         if(field.options[j].selected)
                             //s[encodeURIComponent(field.name)] = encodeURIComponent(field.options[j].value);
                             s[field.name] = field.options[j].value;
                     }
-                } else if ((field.type != 'checkbox' && field.type != 'radio') || field.checked) {
+                } else if ((field.type != 'checkbox' &amp;&amp; field.type != 'radio') || field.checked) {
                     if(field.value != ""){
                       //s[encodeURIComponent(field.name)] = encodeURIComponent(field.value);
                       s[field.name] = field.value;
@@ -850,4 +893,28 @@ class ApiInterface{
       });
       this.json = await this.response.json();
     }
-}
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon May 20 2019 09:35:04 GMT+0200 (GMT+02:00) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>
